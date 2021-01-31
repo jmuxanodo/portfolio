@@ -11,6 +11,8 @@ fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /*-------------
 global style
 -------------*/
@@ -20,16 +22,17 @@ global style
     --bg-black-900: #000000;
     --bg-black-100: #dddddd;
     --bg-black-50: #eff0f4;
-    --bg-opacity: rgba(255,255,255,0.5);
+    --bg-opacity: rgba(240, 219, 219, 0.5);
     --text-black-900: #000000;
     --text-black-700: #555555;
     --text-black-600: #666666;
     --text-black-300: #bbbbbb;
-    --outer-shadow: 3px 3px 2px #d0d0d0, -3px -3px 2px #f8f8f8;
-    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
-    --inner-shadow: inset 3px 3px 2px #d0d0d0, inset -3px -3px 2px #f8f8f8;
+    --outer-shadow: 3px 3px 2px #d0d0d0, -3px -3px 2px #ececec;
+    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #ececec;
+    --inner-shadow: inset 3px 3px 2px #d0d0d0, inset -3px -3px 2px#ececec;
     --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
     /* N code*/
+    --section-bg: rgba(255, 255, 255, 0.808);
     --btn1-hover: #3d3d3d;
     --bg-title: #fffff;
     
@@ -51,6 +54,7 @@ body.dark{
     --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #222327;
     --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #222327;
     /* N code*/
+    --section-bg: #353535da;
     --text-logo: #ffffff;
     --bg-title: rgb(36, 36, 36);
 }
@@ -144,13 +148,15 @@ img{
     font-size: 16px;
     font-weight: 500;
     color: var(--skin-color);
-    background-color: transparent;
     line-height: 1.5;
     cursor: pointer;
     border-radius: 30px;
     transition: all 0.3s ease;
     display: inline-block;
     border: none;
+    background-color: var(--section-bg);
+    min-width: 150px;
+    text-align: center;
 }
 .btn-1::after{
     border-radius: 30px;
@@ -590,13 +596,7 @@ home section
     margin: auto;
     border-radius: 50%;
     padding: 0;
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    height: 400px;
-    transition: all 1s ease-in-out;
-    width: 400px;
-    z-index: 5;
-    overflow: hidden;
+    
 }
 
 
@@ -605,6 +605,15 @@ home section
     background-color: var(--skin-color);
 }
 
+.morph{
+animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 400px;
+    transition: all 1s ease-in-out;
+    width: 400px;
+    z-index: 5;
+    overflow: hidden;
+}
 /*------------
 about section
 -------------*/
@@ -617,7 +626,6 @@ about section
     flex: 0 0 40%;
     max-width: 40%;
     padding: 0 15px;
-    
 }
 
 .about-section .about-img .img-box{
@@ -626,16 +634,18 @@ about section
 }
 
 .about-section .about-img .img-box img{
-    width: 100%;
-    border: 10px solid transparent;
-    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: var(--bg-black-50);
+    transform: translateY(-20px);
 }
-.about-section .about-img .social-links{
+.about-section .about-info .social-links{
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
 }
 
-.about-section .about-img .social-links a{
+.about-section .about-info .social-links a{
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -646,19 +656,20 @@ about section
     margin: 0 4px;
     border-radius: 50%;
     transition: all 0.3s ease;
+    background-color: var(--section-bg);
 
 }
 
-.about-section .about-img .social-links a i{
+.about-section .about-info .social-links a i{
     line-height: 40px;
 }
 
-.about-section .about-img .social-links a::after{
+.about-section .about-info .social-links a::after{
     border-radius: 50%;
 
 }
 
-.about-section .about-img .social-links a:hover{
+.about-section .about-info .social-links a:hover{
     color: var(--skin-color);
 }
 
@@ -666,9 +677,13 @@ about section
     max-width: 60%;
     flex: 0 0 60%;
     padding: 0 15px;
+    margin-top: 100px;
 }
 
 .about-section .about-info p{
+    background-color: var(--section-bg);
+    padding: 15px;
+    border-radius: 10px;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 15px;
@@ -704,7 +719,7 @@ about section
 }
 
 .about-section .about-tabs .tab-item:hover:not(.active){
-    opacity: 0.6;
+    box-shadow: var(--inner-shadow)
 
 }
 
@@ -724,7 +739,9 @@ about section
 }
 
 .about-section .skills {
-    padding: 0 0 40px;
+    padding: 60px 0;
+    border-radius: 10px;
+    background-color: var(--section-bg);
 }
 
 .about-section .skills .skill-item{
@@ -742,14 +759,15 @@ about section
 }
 
 .about-section .skills .skill-item .progress{
-    height: 20px;
+    height: 30px;
     border-radius: 10px;
     position: relative;
+    background-color: var(--bg-black-50);
 }
 
 .about-section .skills .skill-item .progress-bar{
     background-color: var(--text-black-600);
-    height: 6px;
+    height: 15px;
     left: 7px;
     top: 7px;
     position: absolute;
@@ -822,6 +840,7 @@ about section
     padding: 30px;
     border-radius: 5px;
     position: relative;
+    background-color: var(--section-bg);
 }
 
 .about-section .timeline .timeline-item-inner .icon{
@@ -897,6 +916,7 @@ services section
     border-radius: 5px;
     text-align: center;
     width: 100%;
+    background-color: var(--section-bg);
 }
 
 .service-section .service-item-inner .icon{
@@ -1017,6 +1037,7 @@ portfolio section
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    background-color: var(--section-bg);
 }
 
 .portfolio-section .portfolio-item-img img{
@@ -1264,7 +1285,7 @@ portfolio popup
     position: absolute;
     border-radius: 50%;
     text-align: center;
-    line-height: 35px;
+    line-height: 40px;
     font-size: 35px;
     right: 0;
     height: 40px;
@@ -1538,6 +1559,7 @@ contact section
     background: var(--skin-color);
     animation: animate 25s linear infinite;
     bottom: -150px;
+    overflow: hidden;
     
 }
 
@@ -1617,6 +1639,29 @@ contact section
     animation-duration: 11s;
 }
 
+.circles li:nth-child(11){
+    left: -2%;
+    width: 250px;
+    height: 250px;
+    animation-delay: 0s;
+    animation-duration: 13s;
+}
+.circles li:nth-child(12){
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1s;
+    animation-duration: 8s;
+}
+.circles li:nth-child(13){
+    left: 17%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+
 
 
 @keyframes animate {
@@ -1624,14 +1669,14 @@ contact section
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 
     100%{
+        
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
 
 }
-
