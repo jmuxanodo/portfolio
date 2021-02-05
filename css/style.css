@@ -3,15 +3,24 @@
 /*-------------
 fonts
 -------------*/
+
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Logo font*/
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/*-------------
+Theme fonts
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
 
 /*-------------
 global style
@@ -33,6 +42,7 @@ global style
     --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
     /* N code*/
     --section-bg: rgba(255, 255, 255, 0.808);
+    --section-bg-2: rgba(180, 7, 7, 0.808);
     --btn1-hover: #3d3d3d;
     --bg-title: #fffff;
     
@@ -65,7 +75,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     overflow-x: hidden;
-    /* background-color: var(--bg-black-50); */
+    background-color: var(--bg-black-50);
 }
 
 
@@ -77,6 +87,7 @@ body.hidden-scrolling{
     font-weight: 400;
 }
 *{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -293,6 +304,7 @@ img{
       } 
   }
 
+
 .section-title{
     padding: 0 15px;
     flex: 0 0 100%;
@@ -391,6 +403,33 @@ header
     border: 2px solid var(--skin-color);
     border-radius: 50%;
     font-weight: 600;
+}
+.header .main-menu{
+    position: fixed;
+    top:  0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 60%;
+    border-radius: 0 0 30px 30px;
+    background-color: var(--skin-color);
+    font-size: 16px;
+    color: var(--bg-black-50);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px 2px var(--bg-black-50);
+    
+}
+.header .main-menu .main-menu-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header .main-menu .main-menu-wrapper a{
+    color: var(--bg-black-50);
+    padding: 10px 25px;
+    border-radius: 30px;
 }
 
 .header .hamburger-btn{
@@ -619,10 +658,32 @@ animation: morph 8s ease-in-out infinite;
     z-index: 5;
     overflow: hidden;
 }
+
+/*------------
+section breaker
+-------------*/
+.section-br-top{
+    transform: rotate(180deg);
+    width: 100%;
+    height: 150px;
+    background-color: var(--section-bg-tran);
+    border-top: 1px;
+    clip-path:polygon(100% 0,0 0,0 77.5%,1% 77.4%,2% 77.1%,3% 76.6%,4% 75.9%,5% 75.05%,6% 74.05%,7% 72.95%,8% 71.75%,9% 70.55%,10% 69.3%,11% 68.05%,12% 66.9%,13% 65.8%,14% 64.8%,15% 64%,16% 63.35%,17% 62.85%,18% 62.6%,19% 62.5%,20% 62.65%,21% 63%,22% 63.5%,23% 64.2%,24% 65.1%,25% 66.1%,26% 67.2%,27% 68.4%,28% 69.65%,29% 70.9%,30% 72.15%,31% 73.3%,32% 74.35%,33% 75.3%,34% 76.1%,35% 76.75%,36% 77.2%,37% 77.45%,38% 77.5%,39% 77.3%,40% 76.95%,41% 76.4%,42% 75.65%,43% 74.75%,44% 73.75%,45% 72.6%,46% 71.4%,47% 70.15%,48% 68.9%,49% 67.7%,50% 66.55%,51% 65.5%,52% 64.55%,53% 63.75%,54% 63.15%,55% 62.75%,56% 62.55%,57% 62.5%,58% 62.7%,59% 63.1%,60% 63.7%,61% 64.45%,62% 65.4%,63% 66.45%,64% 67.6%,65% 68.8%,66% 70.05%,67% 71.3%,68% 72.5%,69% 73.6%,70% 74.65%,71% 75.55%,72% 76.35%,73% 76.9%,74% 77.3%,75% 77.5%,76% 77.45%,77% 77.25%,78% 76.8%,79% 76.2%,80% 75.4%,81% 74.45%,82% 73.4%,83% 72.25%,84% 71.05%,85% 69.8%,86% 68.55%,87% 67.35%,88% 66.2%,89% 65.2%,90% 64.3%,91% 63.55%,92% 63%,93% 62.65%,94% 62.5%,95% 62.55%,96% 62.8%,97% 63.3%,98% 63.9%,99% 64.75%,100% 65.7%)
+}
+.section-br-bottom{
+
+    width: 100%;
+    height: 150px;
+    background-color: var(--section-bg-tran);
+    border-top: 1px;
+    clip-path:polygon(100% 0,0 0,0 77.5%,1% 77.4%,2% 77.1%,3% 76.6%,4% 75.9%,5% 75.05%,6% 74.05%,7% 72.95%,8% 71.75%,9% 70.55%,10% 69.3%,11% 68.05%,12% 66.9%,13% 65.8%,14% 64.8%,15% 64%,16% 63.35%,17% 62.85%,18% 62.6%,19% 62.5%,20% 62.65%,21% 63%,22% 63.5%,23% 64.2%,24% 65.1%,25% 66.1%,26% 67.2%,27% 68.4%,28% 69.65%,29% 70.9%,30% 72.15%,31% 73.3%,32% 74.35%,33% 75.3%,34% 76.1%,35% 76.75%,36% 77.2%,37% 77.45%,38% 77.5%,39% 77.3%,40% 76.95%,41% 76.4%,42% 75.65%,43% 74.75%,44% 73.75%,45% 72.6%,46% 71.4%,47% 70.15%,48% 68.9%,49% 67.7%,50% 66.55%,51% 65.5%,52% 64.55%,53% 63.75%,54% 63.15%,55% 62.75%,56% 62.55%,57% 62.5%,58% 62.7%,59% 63.1%,60% 63.7%,61% 64.45%,62% 65.4%,63% 66.45%,64% 67.6%,65% 68.8%,66% 70.05%,67% 71.3%,68% 72.5%,69% 73.6%,70% 74.65%,71% 75.55%,72% 76.35%,73% 76.9%,74% 77.3%,75% 77.5%,76% 77.45%,77% 77.25%,78% 76.8%,79% 76.2%,80% 75.4%,81% 74.45%,82% 73.4%,83% 72.25%,84% 71.05%,85% 69.8%,86% 68.55%,87% 67.35%,88% 66.2%,89% 65.2%,90% 64.3%,91% 63.55%,92% 63%,93% 62.65%,94% 62.5%,95% 62.55%,96% 62.8%,97% 63.3%,98% 63.9%,99% 64.75%,100% 65.7%)
+}
+
 /*------------
 about section
 -------------*/
 .about-section{
+    background-color: var(--section-bg-tran);
     padding: 80px 0;
     min-height: 100vh;
 }
@@ -687,7 +748,7 @@ about section
 
 .about-section .about-info p{
     background-color: var(--section-bg);
-    padding: 15px;
+    padding: 30px 15px;
     border-radius: 10px;
     font-size: 16px;
     line-height: 26px;
@@ -984,6 +1045,7 @@ services section
 portfolio section
 -------------*/
 .portfolio-section{
+    background-color: var(--section-bg-tran);
     padding: 80px 0 80px;
     min-height: 100vh;
 }
@@ -1463,6 +1525,7 @@ contact section
 .contact-section{
     padding: 80px 0 80px;
     min-height: 100vh;
+    background-color: var(--section-bg-tran);
 }
 
 .contact-section .contact-item{
@@ -1695,3 +1758,13 @@ contact section
 
 }
 
+
+
+canvas {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -100;
+    opacity: 0.5;
+
+}

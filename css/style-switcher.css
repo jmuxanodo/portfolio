@@ -46,6 +46,9 @@
 }
 
 .style-switcher .day-night{
+    top: 110px;
+}
+.style-switcher .font-switcher{
     top: 55px;
 }
 
@@ -68,7 +71,7 @@
 
 
 .style-switcher h4{
-    margin: 0 0 10px;
+    margin: 0 0 20px;
     color: var(--text-black-700);
     font-size: 16px;
     font-weight: 600;
@@ -103,3 +106,29 @@
 }
 
 
+.style-switcher .fonth4{
+    margin-top: 30px;
+}
+
+.style-switcher .font {
+    color: var(--skin-color);
+    font-size: 20px;
+}
+
+.style-switcher .font-1:hover{
+    cursor: pointer;
+    background-color: var(--text-black-700);
+    font-family: 'Montserrat', sans-serif;
+}
+.style-switcher .font-2:hover{
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+.style-switcher .font-3:hover{
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+.style-switcher .font-4:hover{
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}

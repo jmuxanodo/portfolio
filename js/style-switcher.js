@@ -5,6 +5,12 @@ const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
 styleSwitcherToggler.addEventListener("click", () =>{
     document.querySelector(".style-switcher").classList.toggle("open");
 })
+const fontSwitcherToggler = document.querySelector(".font-switcher");
+fontSwitcherToggler.addEventListener("click", () =>{
+    document.querySelector(".style-switcher").classList.toggle("open");
+})
+
+
 
 // hide style - switcher on scroll
 window.addEventListener("scroll", () =>{
@@ -76,3 +82,57 @@ dayNight.addEventListener("click", () =>{
         dayNight.querySelector("i").classList.add("fa-moon");
     }
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
