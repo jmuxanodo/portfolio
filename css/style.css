@@ -36,9 +36,9 @@ global style
     --text-black-700: #555555;
     --text-black-600: #666666;
     --text-black-300: #bbbbbb;
-    --outer-shadow: 3px 3px 2px #d0d0d0, -3px -3px 2px #ececec;
+    --outer-shadow: 0px 2px 1px var(--skin-color), -3px -3px 2px #ff000000;
     --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #ececec;
-    --inner-shadow: inset 3px 3px 2px #d0d0d0, inset -3px -3px 2px#ececec;
+    --inner-shadow: inset 0px 3px 2px #7c7c7c, inset -3px -3px 2px#ececec;
     --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
     /* N code*/
     --section-bg: rgba(255, 255, 255, 0.808);
@@ -685,7 +685,6 @@ about section
 .about-section{
     background-color: var(--section-bg-tran);
     padding: 80px 0;
-    min-height: 100vh;
 }
 
 .about-section .about-img{
@@ -966,7 +965,6 @@ services section
 -------------*/
 .service-section{
     padding: 80px 0 80px;
-    min-height: 100vh;
 }
 
 .service-section .service-item{
@@ -1047,7 +1045,6 @@ portfolio section
 .portfolio-section{
     background-color: var(--section-bg-tran);
     padding: 80px 0 80px;
-    min-height: 100vh;
 }
 
 .portfolio-section .section-title{
@@ -1425,7 +1422,6 @@ portfolio popup
 testimonial section
 -------------*/
 .testimonial-section{
-    min-height: 100vh;
     padding: 80px 0 80px;
 }
 
@@ -1524,7 +1520,6 @@ contact section
 -------------*/
 .contact-section{
     padding: 80px 0 80px;
-    min-height: 100vh;
     background-color: var(--section-bg-tran);
 }
 
