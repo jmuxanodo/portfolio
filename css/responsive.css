@@ -1,3 +1,9 @@
+@media(max-width: 1277px){
+    .main-menu{
+        visibility: visible;
+        opacity: 0;
+    }
+}
 @media(max-width: 991px){
     .portfolio-section .portfolio-item,
     .service-section .service-item{
@@ -7,6 +13,19 @@
 }
 
 @media(max-width: 767px){
+    .hamburger-btn{
+        top:-55px;
+        right: 15px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50%;
+        justify-content: center;
+        transition:  all 0.3s ease;
+        border: var(--skin-color);
+    }
     .contact-section .w-50,
     .contact-section .contact-item,
     .portfolio-popup .description,

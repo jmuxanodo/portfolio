@@ -1,5 +1,13 @@
-:root{
-	--skin-color:#2e65ad;
-	--theme-btn: #ffffff;
-	--section-bg-tran: rgba(54, 113, 190, 0.644);
+:root {
+    --skin-color: #144381;
+    --theme-btn: #ffffff;
+    --section-bg-tran: rgba(26, 81, 153, 0.952);
+}
+
+.header .main-menu .main-menu-wrapper a {
+    color: var(--menu-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
 }
