@@ -27,7 +27,7 @@ function iChange() {
     const opeMenuBtn = document.querySelector(".open-menu"),
         navMenu = document.querySelector(".nav-bar-n"),
         closeNavBtn = document.querySelector(".close-menu"),
-        colorBtn = document.querySelector(".switcher-popup");
+        colorWindow = document.querySelector(".switcher-popup");
     opeMenuBtn.addEventListener("click", showNavMenu);
     closeNavBtn.addEventListener("click", hideNavMenu);
 
@@ -62,8 +62,8 @@ function iChange() {
 
     // hide menu - switcher on scroll
     window.addEventListener("scroll", () => {
-        if (document.querySelector(".nav-bar-n").classList.contains("open")) {
-            document.querySelector(".nav-bar-n").classList.remove("open");
+        if (navMenu.classList.contains("open")) {
+            navMenu.classList.remove("open");
         }
     })
 
@@ -73,6 +73,14 @@ function iChange() {
             document.querySelector(".open-menu").classList.remove("hide");
             navMenu.classList.remove("open");
             navMenu.classList.add("close");
+        }
+    })
+
+    // hide colors widgen if not clicked
+    document.addEventListener("click", function(event) {
+        var brushNotClicked = colorClick.contains(event.target);
+        if (!brushNotClicked) {
+            document.querySelector(".switcher-popup").classList.remove("open");
         }
     })
 
