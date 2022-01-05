@@ -1874,9 +1874,6 @@ contact section
     width: 80px;
     height: 80px;
     animation-delay: 0s;
-    background-image: url(https://static.toiimg.com/thumb/msid-77549682,width-1200,height-900,resizemode-4/.jpg);
-    background-size: contain;
-    background-position: center;
 }
 
 .circles li:nth-child(2) {
@@ -1900,8 +1897,6 @@ contact section
     height: 60px;
     animation-delay: 0s;
     animation-duration: 18s;
-    background-image: url(https://ih1.redbubble.net/image.1344196233.2905/st,small,507x507-pad,600x600,f8f8f8.jpg);
-    background-size: contain;
 }
 
 .circles li:nth-child(5) {
@@ -1916,9 +1911,6 @@ contact section
     width: 110px;
     height: 110px;
     animation-delay: 3s;
-    background-image: url(https://www.pcworld.com/wp-content/uploads/2021/11/windows-10-logo-100739284-orig-4.jpg?quality=50&strip=all);
-    background-size: cover;
-    background-position: center;
 }
 
 .circles li:nth-child(7) {
@@ -1926,9 +1918,6 @@ contact section
     width: 150px;
     height: 150px;
     animation-delay: 7s;
-    background-image: url(https://download.logo.wine/logo/Linux/Linux-Logo.wine.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .circles li:nth-child(8) {
@@ -1953,9 +1942,6 @@ contact section
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
-    background-image: url(https://w7.pngwing.com/pngs/365/66/png-transparent-vmware-esxi-vmware-vsphere-vmdk-virtual-machine-others-text-rectangle-logo.png);
-    background-size: 120px;
-    background-position: center;
 }
 
 .circles li:nth-child(11) {
@@ -1964,9 +1950,6 @@ contact section
     height: 180px;
     animation-delay: 0s;
     animation-duration: 13s;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .circles li:nth-child(12) {
@@ -1975,9 +1958,6 @@ contact section
     height: 50px;
     animation-delay: 1s;
     animation-duration: 15s;
-    background-image: url(https://www.syloe.com/wp-content/uploads/2020/05/Logo-Proxmox-e1589881083787.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .circles li:nth-child(13) {
