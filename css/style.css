@@ -49,6 +49,8 @@ global style
     --bg-title: #ffffff;
     --menu-color: #fff;
     --section-color-w: #fff;
+    /* shader colors*/
+    --shader-blue: rgba(33, 82, 151, 0.5);
 }
 
 
@@ -2353,3 +2355,7 @@ html {
 
 
 /* =================================================================*/
+
+.shader {
+    box-shadow: rgb(46 107 240 / 40%) 0px 5px, rgb(240 46 170 / 30%) -5px 10px, rgb(240 46 170 / 20%) -10px 15px, rgb(240 46 170 / 10%) -15px 20px, rgb(240 46 170 / 5%) -20px 25px;
+}
