@@ -964,7 +964,7 @@ about section
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 15px;
-    color: var(--skin-color);
+    color: var(--text-black-900);
 }
 
 .about-section .about-info span {
