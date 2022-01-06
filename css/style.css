@@ -108,7 +108,7 @@ body.hidden-scrolling {
 }
 
 ::before,
- ::after {
+::after {
     box-sizing: border-box;
 }
 
@@ -1208,7 +1208,7 @@ services section
 .service-section .service-item-inner:hover {
     transform: translateY(-10px);
     transition: all 0.6s ease-in-out;
-    box-shadow: rgba(46, 107, 240, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) -5px 10px, rgba(240, 46, 170, 0.2) -10px 15px, rgba(240, 46, 170, 0.1) -15px 20px, rgba(240, 46, 170, 0.05) -20px 25px;
+    box-shadow: var(--skin-color) 0px 5px, rgba(240, 46, 170, 0.3) -5px 10px, rgba(240, 46, 170, 0.2) -10px 15px, rgba(240, 46, 170, 0.1) -15px 20px, rgba(240, 46, 170, 0.05) -20px 25px;
 }
 
 .service-section .service-item-inner .icon {
@@ -2077,7 +2077,7 @@ html {
     }
 }
 
-.site-navbar .site-navigation.border-bottom {
+aligh .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid white !important;
 }
 
@@ -2367,7 +2367,6 @@ html {
 /*------------ */
 
 .bubbly-button {
-    font-family: "Helvetica", "Arial", sans-serif;
     display: inline-block;
     font-size: 1em;
     padding: 1em 2em;
@@ -2376,8 +2375,8 @@ html {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--skin-color);
-    color: #fff;
-    border-radius: 4px;
+    color: var(--section-color-w);
+    border-radius: 30px;
     border: none;
     cursor: pointer;
     position: relative;
@@ -2405,20 +2404,20 @@ html {
 .bubbly-button:before {
     display: none;
     top: -75%;
-    background-image: radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--skin-color) 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--skin-color) 20%, transparent 30%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--skin-color) 15%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%);
     background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
 
 .bubbly-button:after {
     display: none;
     bottom: -75%;
-    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--skin-color) 15%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%), radial-gradient(circle, var(--skin-color) 20%, transparent 20%);
     background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 
 .bubbly-button:active {
     transform: scale(0.9);
-    background-color: #e60074;
+    background-color: var(--text-black-900);
     box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
 
